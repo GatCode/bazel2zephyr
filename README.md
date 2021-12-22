@@ -166,3 +166,11 @@ void main(void) {
 }
 ```
 **Note:** You can find the whole `CalculationMachine` Zephyr code of this step in the corresponding folder `Step2`.
+
+## Limitations
+
+This Software is provided as-is!
+
+Please feel free to adapt it to your needs and contribute to the project. I would be very grateful to include your improvements. Thanks for your support!
+
+**WARNING:** Everyone is responsible for what he/she is doing! I am not responsible if you hurt yourself, torch your house or anything that kind trying to do build something new! You are doing everything at your own risk!
