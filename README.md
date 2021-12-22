@@ -9,9 +9,9 @@
 <br>
 
 ## About
-Since at this point in time, there is very little information available on how to take an already existing bazel project, build it via the ARM toolchain and then link it into a Zephyr project, this repository will give you a brief overview on how you can achieve this goal.
+Since at this point in time, there is very little information available on how to take an already existing bazel project, cross-compile it via the ARM toolchain and then link it into a Zephyr project, this repository will give you a brief overview on how you can achieve this goal.
 
-This approach is based on the [bazel-embedded](https://github.com/bazelembedded/bazel-embedded) project, since this is by far the simplest way to compile the appropriate ARM binary. Please take a look at this project if you want to get further information on how you can use bazel to not only build the project itself but also to flash your ARM device.
+This approach is based on the [bazel-embedded](https://github.com/bazelembedded/bazel-embedded) project, since this is by far the simplest way to compile the appropriate ARM binary. Please take a look at this project if you want to get further information on how you can use bazel to not only build the project itself but also to flash your ARM based device.
 
 ## Structure
 To be able to create an easy to follow hands-on example, the simplest way is to split the whole tutorial into three steps:
@@ -151,7 +151,7 @@ If you want to find out why and how this is done in this way, please feel free t
 
 🎉  we successfully integrated the `CalculationMachine` library into the Zephyr project!
 
-The last step is now to include the header file and all the `CalculationMachine` library as any other library:
+The last step is now to include the header file and from now on, you are able to use the `CalculationMachine` library exactly the same as any other library:
 ```c++
 #include <zephyr.h>
 #include <sys/printk.h>
@@ -168,6 +168,8 @@ void main(void) {
 **Note:** You can find the whole `CalculationMachine` Zephyr code of this step in the corresponding folder `Step2`.
 
 ## Limitations
+
+This tutorial gives you a brief overview on the practical aspects of the Bazel cross-compillation. Please keep in mind that depending on the complexity of the existing Bazel project itself and the limited capabilities of the toolchain you are using, you might not be able to integrate the Bazel project into Zephyr without serious code adaptation or refactoring on the Bazel project side!
 
 This Software is provided as-is!
 
